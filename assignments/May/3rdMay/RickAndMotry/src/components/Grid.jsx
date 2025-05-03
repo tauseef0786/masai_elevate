@@ -33,9 +33,9 @@ const Grid = ({ characters, page, setPage, totalPages }) => {
           Previous
         </button>
         <span className="text-lg font-semibold">{page}</span>
-        <button
+         <button
           onClick={handleNext}
-          disabled={page === totalPages}
+          disabled={endIndex >= characters.length}
           className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
         >
           Next
