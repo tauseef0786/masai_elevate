@@ -1,12 +1,44 @@
-# React + Vite
+# Rick and Morty Wiki Application
+The CardDetails component is a dynamic and responsive UI component built with React and Tailwind CSS. It fetches and displays detailed information about a character from an external API (e.g., Rick and Morty API) using route parameters.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup
+    git clone URL
+    
+    npm install
 
-Currently, two official plugins are available:
+    npm run dev
+## ScreenShots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ccaa85ea-b773-4972-955e-81182635cedf" alt="Dashboard View" width="45%" height="270px"  />
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/fe2dc92e-0d5c-4c3b-9700-a363d72ddd61" alt="Appointment Modal" width="45%" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    
+## Folder Structure 
+    RickAndMotry/
+    ├── node_modules/
+    ├── public/
+    ├── src/
+    │   ├── assets/
+    │   ├── components/
+    │   │   ├── Card.jsx
+    │   │   ├── CardDetails.jsx
+    │   │   ├── Footer.jsx
+    │   │   └── Grid.jsx
+    │   ├── hooks/
+    │   │   └── useApi.js
+    │   ├── pages/
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── index.css
+    │   └── main.jsx
+    ├── .gitignore
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    ├── vercel.json
+    └── vite.config.js
+        
