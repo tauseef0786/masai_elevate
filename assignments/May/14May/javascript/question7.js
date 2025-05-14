@@ -58,7 +58,7 @@ function groupAndSortProducts(products){
         return acc
     },{});
     for(let ele in group){
-        group[ele].sort((a, b) => a.price - b.price); 
+        group[ele].sort((a, b) => a.rating - b.rating); 
 
     }
     return group
