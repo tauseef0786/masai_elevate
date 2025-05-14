@@ -57,8 +57,11 @@ function groupAndSortProducts(products){
         acc[ele.category].push(ele)
         return acc
     },{});
-    return group
+    for(let ele in group){
+        group[ele].sort((a, b) => a.price - b.price); 
 
+    }
+    return group
 
 }
 const groupedAndSortedProducts = groupAndSortProducts(products);
