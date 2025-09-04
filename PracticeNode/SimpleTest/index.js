@@ -1,6 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import argon2 from "argon2";
+
+// db connected 
 const db = async () => {
     try {
         await mongoose.connect("mongodb+srv://tauseef123:8271Raza@cluster121.tn9ibkr.mongodb.net/test")
