@@ -44,6 +44,7 @@ app.post("/user", async (req, res) => {
         res.status(500).send({ message: "failes to registaer" })
     }
 });
+// find user 
 app.get("/user", async (req, res) => {
     try {
         const data = await User.find();
