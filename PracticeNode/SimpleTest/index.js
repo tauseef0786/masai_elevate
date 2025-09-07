@@ -65,6 +65,7 @@ app.delete("/user/:id", async (req, res) => {
         res.status(500).send({ message: "failes to delete data" })
     }
 });
+// find by user 
 app.get("/user/:id", async (req, res) => {
     try {
         const data = await User.findById(req.params.id)
